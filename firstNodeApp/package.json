@@ -1,0 +1,20 @@
+{
+    "name": "firstappnodejs",
+    "version": "1.0.0",
+    "description": "Create first web App using NodeJs Only",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "firstapp",
+      "nodejs",
+      "web",
+      "server",
+      "side",
+      "javascript"
+    ],
+    "author": "Aymane Benhima",
+    "license": "MIT"
+  }
