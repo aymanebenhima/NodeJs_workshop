@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Application de Notes</title>
+</head>
+<body>
+    <h1>Application de Notes</h1>
+    <form id="noteForm">
+        <input type="text" id="title" placeholder="titre de la note" required>
+        <textarea id="content" placeholder="Contenu de la note" required></textarea>
+        <button type="submit">Ajouter Note</button>
+    </form>
+    <h2>Application de Notes</h2>
+    <form id="editForm">
+        <input type="text" id="oldTitle" placeholder="Ancien titre de la note" required>
+        <input type="text" id="newTitle" placeholder="Nouveau titre de la note" required>
+        <textarea id="newContent" placeholder="Nouveau content de la note" required></textarea>
+        <button type="submit">Update</button>
+    </form>
+    <ul id="noteList"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
