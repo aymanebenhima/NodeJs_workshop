@@ -1,0 +1,15 @@
+{
+  "name": "passwordgenerator",
+  "version": "1.0.0",
+  "main": "pwdgenrator.js",
+  "scripts": {
+    "start": "node pwdgenerator.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "generate-password": "^1.7.1"
+  }
+}
