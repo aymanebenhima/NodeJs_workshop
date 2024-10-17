@@ -1,0 +1,16 @@
+{
+  "name": "express_acitivitepratique",
+  "version": "1.0.0",
+  "description": "#### Objectif Dans ce checkpoint, nous allons créer une application web qui contient trois pages distinctes :",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "pug": "^3.0.3"
+  }
+}
