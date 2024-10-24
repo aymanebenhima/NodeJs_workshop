@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const contactRoutes = require("./routes/contactRoutes");
+const noteRoutes = require("./routes/noteRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost:27017/contactDB", {
+mongoose.connect("mongodb://localhost:27017/noteDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
@@ -19,7 +19,7 @@ mongoose.connect("mongodb://localhost:27017/contactDB", {
 });
 
 // Définir la route principal d'une API
-app.use("/api/contacts", contactRoutes); // http://localhost:3000/api/contacts
+app.use("/api/notes", noteRoutes); // http://localhost:3000/api/notes
 
 // Lancement du Server
 app.listen(PORT, () => {
