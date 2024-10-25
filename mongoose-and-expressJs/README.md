@@ -51,10 +51,7 @@ Utilisez les types de schéma de base de **Mongoose**. Vous pouvez également aj
   ```javascript
   const person = new Person({ name: 'John', age: 30, favoriteFoods: ['Pizza', 'Pasta'] });
   
-  person.save(function(err, data) {
-    if (err) return console.error(err);
-    console.log(data);
-  });
+  person.save();
   ```
 
 ### 4. Créer plusieurs documents avec `model.create()`
@@ -119,10 +116,7 @@ Trouvez une personne à partir de son `_id` avec `Model.findById()`.
   Person.findById(personId, function(err, person) {
     if (err) return console.error(err);
     person.favoriteFoods.push('hamburger');
-    person.save(function(err, updatedPerson) {
-      if (err) return console.error(err);
-      console.log(updatedPerson);
-    });
+    person.save();
   });
   ```
 
